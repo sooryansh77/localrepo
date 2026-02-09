@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 🔷 Top Navigation Bar */
+        .topbar {
+            background-color: #2c3e50;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .topbar a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .topbar a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Welcome text on right */
+        .welcome {
+            margin-left: auto;
+            color: #f1c40f;
+            font-weight: bold;
+        }
+
+        /* Page content */
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔝 Top Menu -->
+    <div class="topbar">
+        <a href="customerDashboard.html">Home</a>
+        <a href="booking.html">Booking Service</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="previousBooking.html">Previous Booking</a>
+        <a href="contactSupport.html">Contact Support</a>
+        <a href="#" onclick="logout()">Logout</a>
+
+        <div class="welcome" id="welcomeText"></div>
+    </div>
+
+    <!-- 📄 Page Body -->
+    <div class="content">
+        <h2>Customer Home Page</h2>
+        <p>Select an option from the menu to continue.</p>
+    </div>
+
+    <script src="customerDashboard.js"></script>
+</body>
+</html>

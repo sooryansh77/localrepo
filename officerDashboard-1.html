@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Officer Home</title>
+    <style>
+        body { margin: 0; font-family: Arial; }
+
+        .topbar {
+            background: #34495e;
+            display: flex;
+            padding: 0 10px;
+            align-items: center;
+        }
+
+        .topbar a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topbar a:hover {
+            background: #16a085;
+        }
+
+        .welcome {
+            margin-left: auto;
+            color: #f1c40f;
+            font-weight: bold;
+        }
+
+        .content { padding: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+    <a href="officerDashboard.html">Home</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="delivery-status.html">Delivery Status</a>
+    <a href="pickup.html">Pickup Scheduling</a>
+    <a href="previousBooking.html">Previous Booking</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+    <div class="welcome" id="welcomeText"></div>
+</div>
+
+<div class="content">
+    <h2>Officer Home Page</h2>
+    <p>Manage deliveries and pickups from the menu.</p>
+</div>
+
+<script src="officerDashboard.js"></script>
+</body>
+</html>

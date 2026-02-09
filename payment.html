@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<style>
+body { font-family: Arial; }
+.topbar { display:flex; background:#2c3e50; padding:10px; color:white; }
+.welcome { margin-left:auto; }
+button { margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="welcome">Welcome <span id="user"></span></div>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<h2>Bill Payment</h2>
+
+<label>Bill Amount</label>
+<input type="text" id="billAmount" readonly>
+
+<h3>Mode of Payment</h3>
+<select id="mode">
+  <option value="card">Debit/Credit Card</option>
+</select>
+
+<br>
+<button onclick="goToCard()">Pay Now</button>
+<button onclick="goBack()">Back to Booking</button>
+
+<script src="payment.js"></script>
+</body>
+</html>

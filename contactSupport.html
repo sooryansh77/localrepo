@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Support</title>
+    <style>
+        body { font-family: Arial; }
+        .box { width: 400px; margin: auto; border: 1px solid #ccc; padding: 20px; }
+        .error { color: red; font-size: 13px; }
+        .success { color: green; }
+        input, textarea { width: 100%; margin-bottom: 10px; padding: 6px; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Contact Support</h2>
+
+    <p><b>Welcome,</b> <span id="user"></span></p>
+
+    <form id="supportForm">
+
+        <label>Subject</label>
+        <input type="text" id="subject">
+        <p id="subErr" class="error"></p>
+
+        <label>Describe Your Issue</label>
+        <textarea id="message" rows="4"></textarea>
+        <p id="msgErr" class="error"></p>
+
+        <button type="submit">Submit Ticket</button>
+        <button type="button" onclick="goHome()">Back to Home</button>
+    </form>
+
+    <p id="successMsg" class="success"></p>
+</div>
+
+<script src="contactSupport.js"></script>
+</body>
+</html>

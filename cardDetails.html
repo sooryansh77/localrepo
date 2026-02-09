@@ -1,0 +1,20 @@
+<h2>Credit Card Payment</h2>
+
+<label>Payment Type</label>
+<input type="text" value="Credit Card" readonly>
+
+<input type="text" id="cardNo" placeholder="16 digit card number">
+<p id="cardErr"></p>
+
+<input type="text" id="holder" placeholder="Card Holder Name">
+<p id="nameErr"></p>
+
+<input type="text" id="expiry" placeholder="MM/YY">
+<p id="expErr"></p>
+
+<input type="text" id="cvv" placeholder="CVV">
+<p id="cvvErr"></p>
+
+<button onclick="makePayment()">Make Payment</button>
+
+<script src="card.js"></script>

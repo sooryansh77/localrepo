@@ -1,0 +1,17 @@
+<h2 style="color:green;">Consumer Registration Successful</h2>
+
+<p><b>Customer Username:</b> <span id="custUser"></span></p>
+<p><b>Name:</b> <span id="custName"></span></p>
+<p><b>Email:</b> <span id="custEmail"></span></p>
+
+<button onclick="goToDashboard()">Go to Dashboard</button>
+
+<script>
+document.getElementById("custUser").textContent = localStorage.getItem("generatedUser");
+document.getElementById("custName").textContent = localStorage.getItem("username");
+document.getElementById("custEmail").textContent = localStorage.getItem("email");
+
+function goToDashboard() {
+    window.location.href = "customerDashboard.html";
+}
+</script>

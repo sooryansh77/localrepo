@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Registration</title>
+    <style>
+        body { font-family: Arial; }
+        .error { color: red; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<h2>Customer Registration</h2>
+
+<form id="registerForm">
+
+<h3>Personal Information</h3>
+
+<label>Name:</label>
+<input type="text" id="name" maxlength="50">
+<p id="nameError" class="error"></p>
+
+<label>Email:</label>
+<input type="text" id="email">
+<p id="emailError" class="error"></p>
+
+<label>Mobile:</label>
+<select id="countryCode">
+  <option value="+91">+91</option>
+  <option value="+1">+1</option>
+</select>
+<input type="text" id="mobile" placeholder="10 digit number">
+<p id="mobileError" class="error"></p>
+
+<label>Address:</label>
+<textarea id="address"></textarea>
+<p id="addressError" class="error"></p>
+
+<h3>Login Details</h3>
+
+<label>User ID:</label>
+<input type="text" id="userId">
+<p id="userError" class="error"></p>
+
+<label>Password:</label>
+<input type="password" id="password">
+<p id="passError" class="error"></p>
+
+<label>Confirm Password:</label>
+<input type="password" id="confirmPassword">
+<p id="confirmError" class="error"></p>
+
+<h3>Preferences</h3>
+<label><input type="checkbox" value="emailNotif"> Email Notifications</label>
+<label><input type="checkbox" value="smsNotif"> SMS Notifications</label>
+
+<br><br>
+<button type="submit">Register</button>
+<button type="reset">Reset</button>
+
+</form>
+
+<script src="register.js"></script>
+</body>
+</html>
